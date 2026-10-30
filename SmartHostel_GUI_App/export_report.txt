@@ -1,0 +1,7 @@
+Smart Hostel Entry & Exit Management System Report
+Generated Date: 2026-08-08
+
+Total Students  : 4
+Today's Entries : 1
+Today's Exits   : 1
+Visitors Count  : 1

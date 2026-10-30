@@ -1,0 +1,21 @@
+Smart Hostel Full GUI Installer Guide
+====================================
+
+Option 1: Simple local install
+1. Run `installer.bat`
+2. It copies the app to `%LOCALAPPDATA%\SmartHostelFullGUI`
+3. It creates Desktop and Start Menu shortcuts
+
+Option 2: Proper Setup.exe
+1. Install Inno Setup on Windows
+2. Open `SmartHostelFullGUI.iss`
+3. Click Build > Compile
+4. Share the generated `SmartHostelFullGUISetup.exe`
+
+Uninstall
+1. Run `installer_uninstall.bat`
+2. Or use the uninstall entry if you create one in Inno Setup later
+
+Login
+- Username: admin
+- Password: admin123

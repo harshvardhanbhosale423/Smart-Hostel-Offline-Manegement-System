@@ -1,0 +1,4 @@
+S1001|Aarav Sharma|A-101|9876543210|Computer Science|2
+S1002|Meera Nair|B-204|9123456780|Electronics|3
+S1003|Rahul Verma|C-312|9988776655|Mechanical|1
+S02|Aditya Bhosale|A-07|8999063044|Science|2026

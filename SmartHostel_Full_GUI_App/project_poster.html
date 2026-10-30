@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Hostel Entry & Exit Management System Poster</title>
+  <style>
+    :root{
+      --bg:#f3f6fb;
+      --panel:#ffffff;
+      --ink:#10233d;
+      --muted:#516173;
+      --accent:#1677b8;
+      --accent2:#1a9b8f;
+      --line:#d8e1ec;
+      --soft:#eaf4fb;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:Segoe UI, Arial, sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(22,119,184,.10), transparent 28%),
+        radial-gradient(circle at bottom right, rgba(26,155,143,.10), transparent 30%),
+        linear-gradient(180deg, #fbfcfe 0%, var(--bg) 100%);
+      color:var(--ink);
+    }
+    .poster{
+      width:min(1100px, 94vw);
+      margin:24px auto;
+      background:var(--panel);
+      border:1px solid var(--line);
+      border-radius:18px;
+      overflow:hidden;
+      box-shadow:0 18px 50px rgba(16,35,61,.12);
+    }
+    .header{
+      padding:34px 40px 28px;
+      background:linear-gradient(135deg, #0f2745 0%, #163f6a 55%, #116c78 100%);
+      color:#fff;
+      position:relative;
+    }
+    .header:after{
+      content:"";
+      position:absolute;
+      inset:auto -40px -60px auto;
+      width:260px;
+      height:260px;
+      border-radius:50%;
+      background:rgba(255,255,255,.08);
+    }
+    .eyebrow{
+      display:inline-block;
+      padding:8px 14px;
+      border:1px solid rgba(255,255,255,.25);
+      border-radius:999px;
+      font-size:12px;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      background:rgba(255,255,255,.08);
+      margin-bottom:16px;
+    }
+    h1{
+      margin:0;
+      font-size:42px;
+      line-height:1.1;
+      letter-spacing:.02em;
+      max-width:900px;
+    }
+    .subtitle{
+      margin-top:12px;
+      font-size:17px;
+      color:rgba(255,255,255,.88);
+      max-width:850px;
+    }
+    .grid{
+      display:grid;
+      grid-template-columns:1.1fr .9fr;
+      gap:18px;
+      padding:18px;
+    }
+    .card{
+      border:1px solid var(--line);
+      border-radius:16px;
+      background:#fff;
+      padding:22px 22px 18px;
+    }
+    .card h2{
+      margin:0 0 14px;
+      font-size:20px;
+      color:var(--accent);
+      display:flex;
+      align-items:center;
+      gap:10px;
+    }
+    .card h2 span{
+      width:12px;height:12px;border-radius:50%;
+      background:linear-gradient(135deg,var(--accent),var(--accent2));
+      display:inline-block;
+    }
+    .muted{color:var(--muted)}
+    ul{
+      margin:0;
+      padding-left:20px;
+    }
+    li{margin:8px 0; line-height:1.45}
+    .feature-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:12px;
+    }
+    .pill{
+      background:var(--soft);
+      border:1px solid #cfe6f6;
+      border-radius:12px;
+      padding:12px 14px;
+      min-height:64px;
+      display:flex;
+      align-items:center;
+      font-weight:600;
+    }
+    .tech{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+    }
+    .tag{
+      padding:10px 13px;
+      border-radius:999px;
+      background:#f4f8fc;
+      border:1px solid var(--line);
+      font-weight:600;
+      color:#27435f;
+    }
+    .files{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:10px;
+    }
+    .file{
+      padding:12px 14px;
+      border-radius:12px;
+      background:#f7fbff;
+      border:1px solid var(--line);
+      font-family:Consolas, monospace;
+      color:#23415f;
+    }
+    .footer{
+      padding:16px 18px 22px;
+      display:grid;
+      grid-template-columns:1fr 1fr 1fr;
+      gap:18px;
+    }
+    .footer .card{min-height:100%}
+    .bottom-bar{
+      margin:0 18px 18px;
+      background:linear-gradient(135deg, rgba(22,119,184,.10), rgba(26,155,143,.10));
+      border:1px solid #cfe6f6;
+      border-radius:14px;
+      padding:14px 18px;
+      display:flex;
+      justify-content:space-between;
+      gap:20px;
+      font-weight:600;
+      color:#24415b;
+    }
+    .small{font-size:13px}
+    @media print{
+      body{background:#fff}
+      .poster{width:100%; margin:0; border:none; border-radius:0; box-shadow:none}
+      .header{break-after:avoid}
+    }
+    @media (max-width:900px){
+      h1{font-size:32px}
+      .grid,.footer,.feature-grid,.files{grid-template-columns:1fr}
+      .bottom-bar{flex-direction:column}
+    }
+  </style>
+</head>
+<body>
+  <main class="poster">
+    <section class="header">
+      <div class="eyebrow">College Project Poster</div>
+      <h1>SMART HOSTEL ENTRY & EXIT MANAGEMENT SYSTEM</h1>
+      <div class="subtitle">A secure, beginner-friendly hostel management solution for tracking students, visitors, entry-exit records, and reports using file handling and OOP concepts.</div>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2><span></span>Objective</h2>
+        <ul class="muted">
+          <li>Digitize hostel entry and exit record keeping.</li>
+          <li>Manage students and visitors in a structured way.</li>
+          <li>Store data permanently using text file handling.</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2><span></span>Technology Used</h2>
+        <div class="tech">
+          <div class="tag">C++ / C#</div>
+          <div class="tag">OOP Concepts</div>
+          <div class="tag">STL</div>
+          <div class="tag">File Handling</div>
+          <div class="tag">Windows GUI</div>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2><span></span>Core Features</h2>
+        <div class="feature-grid">
+          <div class="pill">Admin Login with 3 attempts</div>
+          <div class="pill">Student Registration</div>
+          <div class="pill">Student Entry & Exit Tracking</div>
+          <div class="pill">Visitor Management</div>
+          <div class="pill">Search / Update / Delete Student</div>
+          <div class="pill">View All Students</div>
+          <div class="pill">Daily, Monthly & Late Entry Reports</div>
+          <div class="pill">Statistics & TXT Export</div>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2><span></span>Data Files</h2>
+        <div class="files">
+          <div class="file">students.txt</div>
+          <div class="file">entrylog.txt</div>
+          <div class="file">exitlog.txt</div>
+          <div class="file">visitors.txt</div>
+        </div>
+      </article>
+    </section>
+
+    <section class="footer">
+      <article class="card">
+        <h2><span></span>Modules</h2>
+        <ul class="muted">
+          <li>Student Registration</li>
+          <li>Student Entry / Exit</li>
+          <li>Search Student</li>
+          <li>Visitor Management</li>
+        </ul>
+      </article>
+      <article class="card">
+        <h2><span></span>Contributor</h2>
+        <div class="muted">Your Name</div>
+        <div style="height:10px"></div>
+        <h2><span></span>Associated With</h2>
+        <div class="muted">Your College Name</div>
+      </article>
+      <article class="card">
+        <h2><span></span>Highlights</h2>
+        <ul class="muted">
+          <li>Permanent storage</li>
+          <li>Simple menu-driven workflow</li>
+          <li>Professional Windows-style application</li>
+        </ul>
+      </article>
+    </section>
+
+    <div class="bottom-bar">
+      <div>Beginner-Friendly | Modular | Secure | Efficient</div>
+      <div class="small">Smart Hostel Entry & Exit Management System</div>
+    </div>
+  </main>
+</body>
+</html>
